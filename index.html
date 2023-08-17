@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+ <html data-theme="light" lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>  
+    <title>Calculetor</title>
+ </head>
+ <body>
+    <header>
+
+    </header>
+    <main>
+        <!-- Container -->
+        <div class="flex flex-col lg:flex-row">
+             <!-- shape Container -->
+            <div class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-4">
+                <!-- card 1 -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Triangle</h2>
+                  <p class="text-xl">Area (A) =0.5 * b * h </p>
+                  <p>
+                    <input type="text" placeholder="Base" id="triangle-base" class="w-24 bg-gray-200 px-3" ><span>cm</span>
+                    <input type="text" placeholder="Hight" id="triangle-hight" class="w-24 bg-gray-200 px-3 ml-3"> <span>cm</span>
+                  </p>
+                  <p class="font-semibold">Area: <span id="areaField">0</span> cm<sup>2</sup> </p>
+                  <div class="card-actions w-full mt-3">
+                    <button onclick="triangleArea ()" class="shadow-inner btn btn-wide hover:bg-blue-500 hover:text-white font-semibold">Calculet</button>
+                  </div>
+                </div>
+              </div>
+               <!-- card 2 -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Rectangle</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions w-full">
+                    <button class="shadow-inner btn btn-wide hover:bg-blue-500 hover:text-white font-semibold">Calculet</button>
+                  </div>
+                </div>
+              </div>
+               <!-- card 3 -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Parallelogram</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions w-full">
+                    <button class="shadow-inner btn btn-wide hover:bg-blue-500 hover:text-white font-semibold">Calculet</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <!-- Text Area -->
+              <div>
+                <h1 id="Calculet-area" class="text-4xl">Calculetor Area</h1>
+            </div>
+        </div>
+    </main>
+    <script src="JS/TrinagleAREA.js"></script>
+ </body>
+ </html>
