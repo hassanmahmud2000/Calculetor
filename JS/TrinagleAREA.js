@@ -39,3 +39,27 @@ function rectangleArea  () {
     areaCalculetField.innerText = areaRectangler;
     
 }
+
+// parallelogram Area Calculet  !!!!!!
+function parallelogramArea () {
+    const parallelogramBase = areCalculet ('Parallelogram-Base')
+    console.log (parallelogramBase)
+    const parallelogramHight = areCalculet ('Parallelogram-Hight');
+    console.log (parallelogramHight);
+
+    // Area Calculet
+    const Area = parallelogramBase * parallelogramHight;
+    setElementInnerText ('parallelogramSet',Area);
+
+}
+function areCalculet (id) {
+    const inputIdField = document.getElementById (id);
+    const inputIdFieldString = inputIdField.value;
+    const inputValue = parseFloat (inputIdFieldString);
+    return inputValue;
+}
+// Set Value In String Type Value  !!!!!!!!!!!
+function setElementInnerText (elementId,area) {
+    const element = document.getElementById (elementId);
+    element.innerText = area;
+}

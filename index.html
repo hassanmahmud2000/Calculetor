@@ -18,7 +18,7 @@
             <div class="flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12 gap-4">
                 <!-- card 1 -->
             <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="./images/triangle.png" alt="Shoes" /></figure>
+                <figure><img src="./images/triangle.png" alt="Shoes" class="pt-4" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Triangle</h2>
                   <p class="text-xl">Area (A) =0.5 * b * h </p>
@@ -34,7 +34,7 @@
               </div>
                <!-- card 2 -->
             <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="./images/rectangle.png" alt="" /></figure>
+                <figure><img src="./images/rectangle.png" alt="" class="pt-4"/></figure>
                 <div class="card-body">
                   <h2 class="card-title">Rectangle</h2>
                   <p>Area (A) = w * I</p>
@@ -50,12 +50,17 @@
               </div>
                <!-- card 3 -->
             <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="./images/parallelogram.png" alt="Shoes" /></figure>
+                <figure><img src="./images/parallelogram.png" alt="Shoes" class="pt-4"/></figure>
                 <div class="card-body">
                   <h2 class="card-title">Parallelogram</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Area (A) = w * I</p>
+                  <p>
+                    <input type="text" placeholder="Base" id="Parallelogram-Base" class="w-24 bg-gray-200 px-3" ><span>cm</span>
+                    <input type="text" placeholder="Hight" id="Parallelogram-Hight" class="w-24 bg-gray-200 px-3 ml-3"> <span>cm</span>
+                  </p>
+                  <p class="font-semibold">Area: <span id="parallelogramSet">0</span> cm<sup>2</sup> </p>
                   <div class="card-actions w-full">
-                    <button class="shadow-inner btn btn-wide hover:bg-blue-500 hover:text-white font-semibold">Calculet</button>
+                    <button onclick="parallelogramArea ()" class="shadow-inner btn btn-wide hover:bg-blue-500 hover:text-white font-semibold ">Calculet</button>
                   </div>
                 </div>
               </div>
