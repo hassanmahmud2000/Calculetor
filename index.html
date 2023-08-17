@@ -34,12 +34,17 @@
               </div>
                <!-- card 2 -->
             <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="./images/rectangle.png" alt="Shoes" /></figure>
+                <figure><img src="./images/rectangle.png" alt="" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Rectangle</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <p>Area (A) = w * I</p>
+                  <p>
+                    <input type="text" placeholder="Width" id="rectangle-width" class="w-24 bg-gray-200 px-3" ><span>cm</span>
+                    <input type="text" placeholder="Length" id="rectangle-length" class="w-24 bg-gray-200 px-3 ml-3"> <span>cm</span>
+                  </p>
+                  <p class="font-semibold">Area: <span id="rectangleAreaField">0</span> cm<sup>2</sup> </p>
                   <div class="card-actions w-full">
-                    <button class="shadow-inner btn btn-wide hover:bg-blue-500 hover:text-white font-semibold">Calculet</button>
+                    <button onclick="rectangleArea ()" class="shadow-inner btn btn-wide hover:bg-blue-500 hover:text-white font-semibold">Calculet</button>
                   </div>
                 </div>
               </div>
